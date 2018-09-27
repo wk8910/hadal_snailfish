@@ -1,0 +1,4 @@
+a=read.table("01.basic_table.pl.out",header=T)
+a$fdr=p.adjust(a$pvalue)
+write.table(a,file="basic_table.pl.out.fdr",quote=F,row.names=F,sep="\t")
+
